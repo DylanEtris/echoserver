@@ -11,7 +11,7 @@ class TestEchoServer(unittest.TestCase):
     PORT = 10823
 
     def setUp(self):
-        self.p = subprocess.Popen(["/home/ubuntu/dev/echoserver/bin/echoserver"])
+        self.p = subprocess.Popen(["./bin/echoserver"])
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def tearDown(self) -> None:
